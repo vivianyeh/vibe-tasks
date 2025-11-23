@@ -21,7 +21,11 @@ jobs:
       - name: Prepare build folder
         run: |
           mkdir -p build
-          cp -r ./* build/
+          for f in *; do
+            if [ "$f" != "build" ] && [ "$f" != ".github" ]; then
+              cp -r "$f" build/
+            fi
+          done
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
