@@ -1,60 +1,79 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>妙麗歲數計算機</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="card">
-    <div class="header">
-      <div class="emoji">🐾</div>
-      <h1>🎀 妙麗歲數計算機 🎀</h1>
-      <p class="lead">輸入狗狗出生日期，顯示狗的實際年齡與換算後的人類年齡（中型犬換算規則）</p>
-    </div>
-    
-    <div class="input-group">
-      <label for="dogName">🐕 狗狗名字</label>
-      <input id="dogName" type="text" placeholder="例如：妙麗" />
-    </div>
-    
-    <div class="input-group">
-      <label for="birth">🎂 出生日期</label>
-      <div class="input-row">
-        <input id="birth" type="date" />
-        <button id="todayBtn" class="secondary" title="填入今天日期">今天</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>妙麗歲數計算機</title>
+    <link rel="icon" type="image/png" href="./icon.png" />
+    <link rel="apple-touch-icon" href="./icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <div class="emoji">🐾</div>
+        <h1>🎀 妙麗歲數計算機 🎀</h1>
+        <p class="lead">
+          輸入狗狗出生日期，顯示狗的實際年齡與換算後的人類年齡（中型犬換算規則）
+        </p>
       </div>
-    </div>
-    
-    <button id="calc" style="width: 100%;">🔍 計算年齡</button>
-    
-    <div class="result" id="result" style="display:none">
-      <div class="result-item">
-        <div class="result-label">🐕 狗狗年齡</div>
-        <div class="result-value" id="dogAge"></div>
-      </div>
-      <div class="result-item">
-        <div class="result-label">👤 換算成人類年齡</div>
-        <div class="result-value" id="humanAge"></div>
-      </div>
-      <div class="breakdown" id="breakdown"></div>
-      <div class="info-box">
-        📊 <strong>換算規則：</strong>第1年＝15人年；第2年＝9人年；之後每1年＝5人年（可接受小數年）
-      </div>
-    </div>
-    
-    <details>
-      <summary>🔧 查看計算明細（Debug）</summary>
-      <pre id="debug">尚未計算</pre>
-    </details>
-    
-    <div class="footer">
-      <p class="footer-text">📚 <strong>資料來源：</strong><a href="https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/" target="_blank" rel="noopener noreferrer">美國犬業俱樂部 (AKC) - 人狗年齡換算指南</a></p>
-      <p class="footer-text">⚠️ <strong>僅供參考：</strong>不同品種與體型的狗狗老化速度可能有所差異</p>
-    </div>
-  </div>
 
-  <script src="./script.js"></script>
-</body>
+      <div class="input-group">
+        <label for="dogName">🐕 狗狗名字</label>
+        <input id="dogName" type="text" placeholder="例如：妙麗" />
+      </div>
+
+      <div class="input-group">
+        <label for="birth">🎂 出生日期</label>
+        <div class="input-row">
+          <input id="birth" type="date" />
+          <button id="todayBtn" class="secondary" title="填入今天日期">
+            今天
+          </button>
+        </div>
+      </div>
+
+      <button id="calc" style="width: 100%">🔍 計算年齡</button>
+
+      <div class="result" id="result" style="display: none">
+        <div class="result-item">
+          <div class="result-label">🐕 狗狗年齡</div>
+          <div class="result-value" id="dogAge"></div>
+        </div>
+        <div class="result-item">
+          <div class="result-label">👤 換算成人類年齡</div>
+          <div class="result-value" id="humanAge"></div>
+        </div>
+        <div class="breakdown" id="breakdown"></div>
+        <div class="info-box">
+          📊
+          <strong>換算規則：</strong
+          >第1年＝15人年；第2年＝9人年；之後每1年＝5人年（可接受小數年）
+        </div>
+      </div>
+
+      <details>
+        <summary>🔧 查看計算明細（Debug）</summary>
+        <pre id="debug">尚未計算</pre>
+      </details>
+
+      <div class="footer">
+        <p class="footer-text">
+          📚 <strong>資料來源：</strong
+          ><a
+            href="https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >美國犬業俱樂部 (AKC) - 人狗年齡換算指南</a
+          >
+        </p>
+        <p class="footer-text">
+          ⚠️ <strong>僅供參考：</strong>不同品種與體型的狗狗老化速度可能有所差異
+        </p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
