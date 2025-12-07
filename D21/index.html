@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>今天吃什麼甜點？</title>
+    <link rel="icon" type="image/png" href="./icon.png" />
+    <link rel="apple-touch-icon" href="./icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <div id="loading" class="loading-screen">
+        <div class="loading-donut">🍩</div>
+        <p class="loading-text">載入天氣資訊中...</p>
+    </div>
+
+    <div class="status-bar">
+        <select class="location-select" id="locationSelect">
+            <option value="宜蘭縣">宜蘭縣</option>
+            <option value="花蓮縣">花蓮縣</option>
+            <option value="臺東縣">臺東縣</option>
+            <option value="澎湖縣">澎湖縣</option>
+            <option value="金門縣">金門縣</option>
+            <option value="連江縣">連江縣</option>
+            <option value="臺北市">臺北市</option>
+            <option value="新北市" selected>新北市</option>
+            <option value="桃園市">桃園市</option>
+            <option value="臺中市">臺中市</option>
+            <option value="臺南市">臺南市</option>
+            <option value="高雄市">高雄市</option>
+            <option value="基隆市">基隆市</option>
+            <option value="新竹縣">新竹縣</option>
+            <option value="新竹市">新竹市</option>
+            <option value="苗栗縣">苗栗縣</option>
+            <option value="彰化縣">彰化縣</option>
+            <option value="南投縣">南投縣</option>
+            <option value="雲林縣">雲林縣</option>
+            <option value="嘉義縣">嘉義縣</option>
+            <option value="嘉義市">嘉義市</option>
+            <option value="屏東縣">屏東縣</option>
+        </select>
+        <div id="updateTime" class="update-pill">更新中...</div>
+    </div>
+
+
+    <div class="container" id="mainContent" style="display: none;">
+
+        <div class="hero-card">
+            <h1>🍰 今天吃什麼甜點？</h1>
+            <p class="subtitle">讓天氣幫你決定</p>
+
+            <div class="weather-info-grid" id="weatherInfo">
+                <div class="weather-info-value">載入中...</div>
+            </div>
+
+            <button class="draw-button" id="drawButton">
+                <span class="button-text">來點甜的</span>
+                <span class="button-icon">🍩</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="popup-overlay hidden" id="resultOverlay">
+        <div class="popup-card" id="resultCard">
+            <button class="close-button" id="closeButton">×</button>
+            <div class="result-icon" id="resultIcon"></div>
+            <div class="result-title" id="cardTitle"></div>
+            <div class="result-body">
+                <div class="result-reason" id="reason"></div>
+                <div class="health-level" id="healthLevel"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
