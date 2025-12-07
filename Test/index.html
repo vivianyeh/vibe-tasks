@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <html lang="zh-Hant">
+
+<head>
+
+
+  <div class="container">
+    <header>      <div class="logo-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 90">
+                <!-- 外框科技感邊框 -->
+                <rect x="5" y="5" width="290" height="80" fill="none" stroke="#00f3ff" stroke-width="2" rx="8"/>
+                <rect x="10" y="10" width="280" height="70" fill="none" stroke="#00f3ff" stroke-width="1" rx="6" opacity="0.5"/>
+                
+                <!-- 左側圖形：電路板風格的 "F" -->
+                <g transform="translate(20, 22)">
+                    <!-- F 字母主體 -->
+                    <path d="M 0 0 L 22 0 L 22 6 L 6 6 L 6 16 L 18 16 L 18 22 L 6 22 L 6 36 L 0 36 Z" fill="#00f3ff"/>
+                    <!-- 電路節點 -->
+                    <circle cx="22" cy="3" r="2" fill="#00f3ff"/>
+                    <circle cx="18" cy="19" r="2" fill="#00f3ff"/>
+                    <circle cx="3" cy="36" r="2" fill="#00f3ff"/>
+                    <!-- 連接線 -->
+                    <line x1="22" y1="3" x2="26" y2="3" stroke="#00f3ff" stroke-width="1.5"/>
+                    <line x1="18" y1="19" x2="22" y2="19" stroke="#00f3ff" stroke-width="1.5"/>
+                </g>
+                
+                <!-- 中間文字：FUTURE 3C + 小杰 3C 館 -->
+                <g transform="translate(50, 38)">
+                    <text x="0" y="0" font-family="Orbitron, monospace" font-size="18" font-weight="700" fill="#00f3ff" letter-spacing="1.5">
+                        FUTURE 3C
+                    </text>
+                    <text x="0" y="24" font-family="'Noto Sans TC', 'Microsoft JhengHei', sans-serif" font-size="16" font-weight="500" fill="#fff" letter-spacing="2">
+                        未來 3C 館
+                    </text>
+                </g>
+                
+                <!-- 右側科技裝飾線條 -->
+                <g transform="translate(255, 30)">
+                    <line x1="0" y1="0" x2="0" y2="36" stroke="#00f3ff" stroke-width="2"/>
+                    <line x1="0" y1="7" x2="12" y2="7" stroke="#00f3ff" stroke-width="1.5"/>
+                    <line x1="0" y1="18" x2="15" y2="18" stroke="#00f3ff" stroke-width="1.5"/>
+                    <line x1="0" y1="29" x2="12" y2="29" stroke="#00f3ff" stroke-width="1.5"/>
+                    <circle cx="12" cy="7" r="2" fill="#00f3ff"/>
+                    <circle cx="15" cy="18" r="2" fill="#00f3ff"/>
+                    <circle cx="12" cy="29" r="2" fill="#00f3ff"/>
+                </g>
+                
+                <!-- 底部裝飾線 -->
+                <line x1="20" y1="70" x2="280" y2="70" stroke="#00f3ff" stroke-width="1" opacity="0.6"/>
+                
+                <!-- 科技感小點 -->
+                <circle cx="20" cy="70" r="2" fill="#00f3ff"/>
+                <circle cx="280" cy="70" r="2" fill="#00f3ff"/>
+            </svg>
+        </div>
+        
+        <h1>未來 3C 館</h1>
+    </header>
+   
+
+    <!-- 專案架構流程圖區塊 -->
+    <section style="padding: 40px 20px; max-width: 1400px; margin: 0 auto;">
+        <h2 style="text-align: center; color: var(--neon-color); font-family: 'Orbitron', sans-serif; margin-bottom: 30px; font-size: 1.8rem;">
+            專案架構流程圖
+        </h2>
+        <div style="background: #1a1a1a; padding: 20px; border-radius: 12px; border: 1px solid #333; overflow-x: auto;">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1450" style="width: 100%; height: auto;">
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#00f3ff"/>
+                    </marker>
+                    <marker id="arrowhead-data" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#ff6b35"/>
+                    </marker>
+                    <marker id="arrowhead-event" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#4ecdc4"/>
+                    </marker>
+                </defs>
+                
+                <!-- 背景 -->
+                <rect width="600" height="1450" fill="#0a0a0a"/>
+                
+                <!-- 標題 -->
+                <text x="300" y="40" font-family="Orbitron, sans-serif" font-size="22" font-weight="700" fill="#00f3ff" text-anchor="middle">
+                    FUTURE 3C 專案架構
+                </text>
+                
+                <!-- 圖例 -->
+                <g transform="translate(150, 70)">
+                    <line x1="0" y1="0" x2="40" y2="0" stroke="#00f3ff" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    <text x="45" y="5" font-size="11" fill="#00f3ff">程式流程</text>
+                    
+                    <line x1="110" y1="0" x2="150" y2="0" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrowhead-data)"/>
+                    <text x="155" y="5" font-size="11" fill="#ff6b35">資料流向</text>
+                    
+                    <line x1="220" y1="0" x2="260" y2="0" stroke="#4ecdc4" stroke-width="2" marker-end="url(#arrowhead-event)"/>
+                    <text x="265" y="5" font-size="11" fill="#4ecdc4">事件綁定</text>
+                </g>
+                
+                <!-- 1. 外部 API -->
+                <g id="layer1">
+                    <rect x="150" y="120" width="300" height="80" fill="#1a1a1a" stroke="#00f3ff" stroke-width="2" rx="8"/>
+                    <text x="300" y="145" font-size="14" font-weight="700" fill="#00f3ff" text-anchor="middle">外部 API</text>
+                    <text x="300" y="170" font-size="12" fill="#fff" text-anchor="middle">Google Sheets CSV</text>
+                    <text x="300" y="188" font-size="10" fill="#888" text-anchor="middle">CSV_URL (常數)</text>
+                </g>
+                
+                <!-- 箭頭 1→2 -->
+                <line x1="300" y1="200" x2="300" y2="235" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrowhead-data)"/>
+                <text x="310" y="220" font-size="11" fill="#ff6b35">下載資料</text>
+                
+                <!-- 2. 資料載入器 -->
+                <g id="layer2">
+                    <rect x="150" y="240" width="300" height="80" fill="#1a1a1a" stroke="#ff6b35" stroke-width="2" rx="8"/>
+                    <text x="300" y="265" font-size="14" font-weight="700" fill="#ff6b35" text-anchor="middle">資料載入器</text>
+                    <text x="300" y="290" font-size="12" fill="#fff" text-anchor="middle">Papa.parse()</text>
+                    <text x="300" y="308" font-size="10" fill="#888" text-anchor="middle">download: true, header: true</text>
+                </g>
+                
+                <!-- 箭頭 2→3 -->
+                <line x1="300" y1="320" x2="300" y2="355" stroke="#00f3ff" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <text x="310" y="340" font-size="11" fill="#00f3ff">解析完成</text>
+                
+                <!-- 3. 初始化函式 -->
+                <g id="layer3">
+                    <rect x="150" y="360" width="300" height="80" fill="#1a1a1a" stroke="#00f3ff" stroke-width="2" rx="8"/>
+                    <text x="300" y="385" font-size="14" font-weight="700" fill="#00f3ff" text-anchor="middle">init()</text>
+                    <text x="300" y="410" font-size="12" fill="#fff" text-anchor="middle">初始化函式</text>
+                    <text x="300" y="428" font-size="10" fill="#888" text-anchor="middle">程式入口點</text>
+                </g>
+                
+                <!-- 箭頭 3→4 -->
+                <line x1="300" y1="440" x2="300" y2="495" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrowhead-data)"/>
+                <text x="310" y="470" font-size="11" fill="#ff6b35">儲存資料</text>
+                
+                <!-- 4. 全域資料狀態 (加大間距) -->
+                <g id="layer4">
+                    <rect x="150" y="500" width="300" height="100" fill="#1a1a1a" stroke="#ff6b35" stroke-width="2" rx="8" stroke-dasharray="5,5"/>
+                    <text x="300" y="525" font-size="14" font-weight="700" fill="#ff6b35" text-anchor="middle">全域資料狀態</text>
+                    <text x="300" y="550" font-size="12" fill="#fff" text-anchor="middle">allData = []</text>
+                    <text x="300" y="570" font-size="12" fill="#fff" text-anchor="middle">currentFilter = 'all'</text>
+                    <text x="300" y="588" font-size="10" fill="#888" text-anchor="middle">(陣列儲存所有商品資料)</text>
+                </g>
+                
+                <!-- 箭頭 4→5 左側 (避免重疊) -->
+                <polyline points="220,600 220,660 95,660 95,705" fill="none" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrowhead-data)"/>
+                <text x="105" y="680" font-size="11" fill="#ff6b35">初始渲染</text>
+                
+                <!-- 箭頭 4→6 中間 (垂直下降) -->
+                <line x1="300" y1="600" x2="300" y2="855" stroke="#00f3ff" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <text x="310" y="725" font-size="11" fill="#00f3ff">設定事件</text>
+                
+                <!-- 箭頭 4→7 右側 (避免重疊) -->
+                <polyline points="380,600 380,730 505,730 505,915" fill="none" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrowhead-data)"/>
+                <text x="430" y="750" font-size="11" fill="#ff6b35">提供資料</text>
+                
+                <!-- 5. renderCards() (左側，位置降低) -->
+                <g id="layer5-left">
+                    <rect x="30" y="710" width="130" height="100" fill="#1a1a1a" stroke="#00f3ff" stroke-width="2" rx="8"/>
+                    <text x="95" y="735" font-size="13" font-weight="700" fill="#00f3ff" text-anchor="middle">renderCards()</text>
+                    <text x="95" y="757" font-size="11" fill="#fff" text-anchor="middle">渲染卡片</text>
+                    <text x="95" y="775" font-size="9" fill="#888" text-anchor="middle">• 清空 DOM</text>
+                    <text x="95" y="790" font-size="9" fill="#888" text-anchor="middle">• 建立卡片</text>
+                    <text x="95" y="805" font-size="9" fill="#888" text-anchor="middle">• 處理標籤</text>
+                </g>
+                
+                <!-- 6. setupFilterButtons() (中間，位置降低) -->
+                <g id="layer6-center">
+                    <rect x="220" y="810" width="160" height="100" fill="#1a1a1a" stroke="#4ecdc4" stroke-width="2" rx="8"/>
+                    <text x="300" y="835" font-size="13" font-weight="700" fill="#4ecdc4" text-anchor="middle">setupFilter</text>
+                    <text x="300" y="850" font-size="13" font-weight="700" fill="#4ecdc4" text-anchor="middle">Buttons()</text>
+                    <text x="300" y="872" font-size="11" fill="#fff" text-anchor="middle">設定篩選</text>
+                    <text x="300" y="890" font-size="9" fill="#888" text-anchor="middle">• 取得按鈕</text>
+                    <text x="300" y="905" font-size="9" fill="#888" text-anchor="middle">• 綁定事件</text>
+                </g>
+                
+                <!-- 7. filterAndRender() (右側，位置降低) -->
+                <g id="layer7-right">
+                    <rect x="440" y="710" width="130" height="100" fill="#1a1a1a" stroke="#00f3ff" stroke-width="2" rx="8"/>
+                    <text x="505" y="735" font-size="13" font-weight="700" fill="#00f3ff" text-anchor="middle">filterAnd</text>
+                    <text x="505" y="750" font-size="13" font-weight="700" fill="#00f3ff" text-anchor="middle">Render()</text>
+                    <text x="505" y="772" font-size="11" fill="#fff" text-anchor="middle">篩選渲染</text>
+                    <text x="505" y="790" font-size="9" fill="#888" text-anchor="middle">• 過濾資料</text>
+                    <text x="505" y="805" font-size="9" fill="#888" text-anchor="middle">• 呼叫渲染</text>
+                </g>
+                
+                <!-- 箭頭 7→5 (改用更寬的弧線避免重疊) -->
+                <polyline points="440,970 180,970 180,880 95,880 95,815" fill="none" stroke="#00f3ff" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <text x="190" y="960" font-size="11" fill="#00f3ff">呼叫渲染</text>
+                
+                <!-- 箭頭 5→8 -->
+                <line x1="95" y1="810" x2="95" y2="1045" stroke="#00f3ff" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <text x="105" y="925" font-size="11" fill="#00f3ff">操作 DOM</text>
+                
+                <!-- 8. DOM 操作層 -->
+                <g id="layer8">
+                    <rect x="50" y="1050" width="500" height="100" fill="#1a1a1a" stroke="#00f3ff" stroke-width="2" rx="8"/>
+                    <text x="300" y="1075" font-size="14" font-weight="700" fill="#00f3ff" text-anchor="middle">DOM 操作層</text>
+                    <text x="300" y="1100" font-size="12" fill="#fff" text-anchor="middle">getElementById('app') → 清空 innerHTML</text>
+                    <text x="300" y="1120" font-size="11" fill="#fff" text-anchor="middle">→ 動態生成卡片 HTML</text>
+                    <text x="300" y="1138" font-size="10" fill="#888" text-anchor="middle">(img, tag-container, card-title, card-price)</text>
+                </g>
+                
+                <!-- 箭頭 8→9 -->
+                <line x1="300" y1="1150" x2="300" y2="1205" stroke="#00f3ff" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <text x="310" y="1180" font-size="11" fill="#00f3ff">渲染到畫面</text>
+                
+                <!-- 9. 使用者介面 -->
+                <g id="layer9">
+                    <rect x="50" y="1210" width="500" height="120" fill="#1a1a1a" stroke="#4ecdc4" stroke-width="2" rx="8"/>
+                    <text x="300" y="1235" font-size="14" font-weight="700" fill="#4ecdc4" text-anchor="middle">使用者介面 (瀏覽器畫面)</text>
+                    
+                    <g transform="translate(90, 1260)">
+                        <rect x="0" y="0" width="90" height="50" fill="#222" stroke="#4ecdc4" stroke-width="1" rx="4"/>
+                        <text x="45" y="23" font-size="10" fill="#fff" text-anchor="middle">篩選按鈕</text>
+                        <text x="45" y="38" font-size="8" fill="#888" text-anchor="middle">.filter-btn</text>
+                    </g>
+                    
+                    <g transform="translate(200, 1260)">
+                        <rect x="0" y="0" width="90" height="50" fill="#222" stroke="#4ecdc4" stroke-width="1" rx="4"/>
+                        <text x="45" y="23" font-size="10" fill="#fff" text-anchor="middle">商品卡片</text>
+                        <text x="45" y="38" font-size="8" fill="#888" text-anchor="middle">.card</text>
+                    </g>
+                    
+                    <g transform="translate(310, 1260)">
+                        <rect x="0" y="0" width="90" height="50" fill="#222" stroke="#4ecdc4" stroke-width="1" rx="4"/>
+                        <text x="45" y="23" font-size="10" fill="#fff" text-anchor="middle">標籤圖片</text>
+                        <text x="45" y="38" font-size="8" fill="#888" text-anchor="middle">.tag</text>
+                    </g>
+                    
+                    <g transform="translate(420, 1260)">
+                        <rect x="0" y="0" width="90" height="50" fill="#222" stroke="#4ecdc4" stroke-width="1" rx="4"/>
+                        <text x="45" y="23" font-size="10" fill="#fff" text-anchor="middle">訊息框</text>
+                        <text x="45" y="38" font-size="8" fill="#888" text-anchor="middle">.msg-box</text>
+                    </g>
+                </g>
+                
+                <!-- 事件回流：UI → setupFilterButtons (改用左側路徑) -->
+                <polyline points="130,1210 130,1190 20,1190 20,910 215,910" fill="none" stroke="#4ecdc4" stroke-width="2" marker-end="url(#arrowhead-event)" stroke-dasharray="5,5"/>
+                <text x="30" y="1100" font-size="11" fill="#4ecdc4">click 事件</text>
+                
+                <!-- 事件觸發：setupFilterButtons → filterAndRender -->
+                <polyline points="380,910 420,910 420,970 435,970" fill="none" stroke="#4ecdc4" stroke-width="2" marker-end="url(#arrowhead-event)" stroke-dasharray="5,5"/>
+                <text x="390" y="940" font-size="11" fill="#4ecdc4">觸發篩選</text>
+                
+                <!-- 底部版權 -->
+                <text x="300" y="1370" font-size="10" fill="#555" text-anchor="middle">FUTURE 3C 專案架構 © 2025</text>
+            </svg>
+        </div>
+    </section>
+    <div class="filter-bar">
+      <span class="filter-label">價格篩選：</span>
+      <button class="filter-btn active" data-filter="all">全部顯示</button>
+      <button class="filter-btn" data-filter="low">$10,000 以下</button>
+      <button class="filter-btn" data-filter="mid">$10,000 - $30,000</button>
+      <button class="filter-btn" data-filter="high">$30,000 以上</button>
+    </div>
+
+    <div id="app" class="grid">
+      <div class="msg-box">
+        <h2>⏳ 倉庫連線中...</h2>
+        <p>如果很久沒反應，請檢查你的 CSV 網址是否正確</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>
